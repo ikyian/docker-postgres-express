@@ -1,0 +1,28 @@
+# Use postgres/example (user/password) credentials
+version: '3.1'
+
+services:
+
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: example
+    volumes:
+      - ./postgres-data:/var/lib/postgresql/data
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
+
+  web:
+      build:
+          context: server
+          dockerfile: dev.dockerfile
+      ports:
+          - "3000:3000"
+      volumes:
+          - /app/node_modules
+          - ./server:/app

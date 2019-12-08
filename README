@@ -1,0 +1,19 @@
+Configurestio
+
+1. create folder /postgres-data for postgress DB data
+
+WEB URL: http://localhost:3000
+POSTGRE ADMIN URL: http://localhost:8080
+
+postgres access:
+user: postgres
+password: example
+
+Commands:
+
+Start:
+    docker-compose up
+Stop:
+    docker-compose down
+Restart service (db, adminer, web):
+    docker-compose restart <service>
