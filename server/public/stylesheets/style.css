@@ -6,3 +6,63 @@ body {
 a {
   color: #00B7FF;
 }
+
+.options {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0;
+}
+
+.options .options-group {
+    flex-grow: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.options .options-group-last {
+    flex-grow: 1;
+}
+
+.options .control {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+.options .contol input {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.btn {
+    display: inline-block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #99f;
+    cursor: pointer;
+}
+
+.check-box {
+    display: flex;
+    flex-direction: row;
+    line-height: 20px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.check-box .image-box {
+    width: 20px;
+    height: 20px;
+    border: solid 2px #ccc;
+    margin-right: 10px;
+}
+
+.check-box.checked .image-box {
+    border-color: #666;
+}
+
+.check-box {
+    margin: 10px 20px;
+}

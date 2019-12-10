@@ -1,5 +1,43 @@
 extends layout
 
+block headScripts
+    script(src='/javascripts/index.js')
+
 block content
-  h1= title
-  p Welcome to #{title}
+    h1= title
+    p Welcome to #{title}
+    div.options
+        div.options-group
+            div.check-box(data-name='option', data-value='0')
+                div.image-box
+                div.label
+                    | 0
+            div.check-box(data-name='option', data-value='1')
+                div.image-box
+                div.label
+                    | 1
+        div.options-group.options-group-last
+            div.check-box(data-name='option', data-value='2')
+                div.image-box
+                div.label
+                    | 2
+
+    div.options
+        div.options-group
+            div.check-box(data-name='option-2', data-value='0')
+                div.image-box
+                div.label
+                    | 0
+            div.check-box(data-name='option-2', data-value='1')
+                div.image-box
+                div.label
+                    | 1
+        div.options-group.options-group-last
+            div.check-box(data-name='option-2', data-value='2')
+                div.image-box
+                div.label
+                    | 2
+
+    div.commands
+        div.btn.btn-check
+            | check
