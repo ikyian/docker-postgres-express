@@ -23,17 +23,6 @@ a {
     flex-grow: 1;
 }
 
-.options .control {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 10px;
-}
-
-.options .contol input {
-    margin-right: 10px;
-    font-size: 20px;
-}
-
 .btn {
     display: inline-block;
     margin: 0 auto;
@@ -55,12 +44,14 @@ a {
 .check-box .image-box {
     width: 20px;
     height: 20px;
-    border: solid 2px #ccc;
     margin-right: 10px;
+    background-image: url('../images/check_box_outline_blank-24px.svg');
+    background-size: 26px;
+    background-position: -3px;
 }
 
 .check-box.checked .image-box {
-    border-color: #666;
+    background-image: url('../images/check_box-24px.svg');
 }
 
 .check-box {
